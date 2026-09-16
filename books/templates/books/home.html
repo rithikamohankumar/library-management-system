@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin-bottom: 8px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            color: #555;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Library Management System</h1>
+        <p>Book and Student Management</p>
+    </div>
+
+    <div class="container">
+
+        <h2>Welcome to Library Management System</h2>
+
+        <p>
+            Manage books and students easily using this system.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📚 Books</h3>
+
+                <p>
+                    View and manage library books.
+                </p>
+
+                <a href="/api/books/" class="button">
+                    View Books
+                </a>
+            </div>
+
+
+            <div class="card">
+                <h3>🎓 Students</h3>
+
+                <p>
+                    View and manage registered students.
+                </p>
+
+                <a href="/api/students/" class="button">
+                    View Students
+                </a>
+            </div>
+
+
+            <div class="card">
+                <h3>⚙️ Admin</h3>
+
+                <p>
+                    Manage books and students through admin.
+                </p>
+
+                <a href="/admin/" class="button">
+                    Admin Panel
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
